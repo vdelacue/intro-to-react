@@ -1,16 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>My First React App</title>
     </head>
     
     <body>
-        <p>Hello world!</p>
+        
         <div id="app"></div>
+        
+<!--
+        <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+-->
+        
+<!--THE SCRIPT LINKS BELOW ARE THE SCRIPTS PROVIDED IN CHECKPOINT HOWEVER THEY DID NOT WORK SO I COMMENTED THEM OUT AND INSTEAD AM USING SCRIPTS RECOMMENDED FROM THE REACTJS.ORG SITE, WRITTEN ABOVE THIS COMMENT
+
+NEITHER ONE WORK! UGH!-->
+<!--
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+SINCE NEITHER WORKED PUT BACK SCRIPTS FROM CHECKPOINT
+
+-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+     
         <script type="text/babel">
+
             class Greeting extends React.Component {
                 render() {
                     return (
@@ -24,7 +44,7 @@
             ReactDom.render(
                 <Greeting />, document.getElementById('app')
             );
-            </script>
-    </body>
-    
+
+        </script>
+    </body>  
 </html>
