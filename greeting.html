@@ -7,6 +7,7 @@
     <body>
         <p>Hello world!</p>
         <div id="app"></div>
+        <div id="comment-box"></div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
@@ -24,6 +25,28 @@
             ReactDom.render(
                 <Greeting />, document.getElementById('app')
             );
+            
+            class Comment extends React.Component {
+                render() {
+                    return (
+                        <div className="comment">
+                            <p className="comment-header">Vanessa's comment for Bloc Assignment</p>
+                            <View
+                                style={{
+                                borderBottomColor: 'black',
+                                borderBottomWidth: 1,
+                                }}
+                            />
+                            <p className="comment-body">Creating a react components is fun!</p>
+                        </div>
+                    );
+                }
+            }
+            
+            ReactDom.render(
+                <Comment />, document.getElemetById('comment-box')
+            );
+
             </script>
     </body>
     
