@@ -34,12 +34,15 @@
                     return (
                         <div className="comment">
                             <p className="comment-header">Vanessa's comment for Bloc Assignment</p>
+<!--Cannot draw a line underneath this className="comment-header", tried to use an empty View with a bottom border but it is not working so I commented it out. Can you show me how to make this work?-->
+<!-- 
                             <View
                                 style={{
                                 borderBottomColor: 'black',
                                 borderBottomWidth: 1,
                                 }}
                             />
+-->
                             <p className="comment-body">Creating a react components is fun!</p>
                         </div>
                     );
@@ -47,7 +50,7 @@
             }
             
             ReactDOM.render(
-                <Comment />, document.getElemetById('comment-box')
+                <Comment />, document.getElementById('comment-box')
             );
 
             </script>
